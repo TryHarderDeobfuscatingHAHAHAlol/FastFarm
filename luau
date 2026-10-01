@@ -875,8 +875,8 @@ settingsTab:AddButton("Jungle Lift",function()
     VirtualInputManager:SendKeyEvent(false, Enum.KeyCode.E, false, game)
 end)
 
-settingsTab:AddButton("Jungle Squat",function()
-    hrp.CFrame = CFrame.new(-8371.43359375, 6.79806327, 2858.88525390)
+settingsTab:AddButton("Overcharged Squat",function()
+    hrp.CFrame = CFrame.new(-2667.65039, 153.939499, 5473.21973, 1, 0, 0, 0, 1, 0, 0, 0, 1)
     task.wait(0.2)
     VirtualInputManager:SendKeyEvent(true, Enum.KeyCode.E, false, game)
     task.wait(0.05)
@@ -887,14 +887,14 @@ local infoTab = window:AddTab("Info")
 infoTab:Show()
 infoTab:AddLabel("Developer by Kenzou").TextSize = 17
 infoTab:AddLabel("Tiktok: Kenzouu Warfreakkk!").TextSize = 17
-infoTab:AddLabel("Main Owner: ValtroxqDev") .TextSize = 17
-infoTab:AddButton("Copy Discord Invite", function()
-    local link = "https://discord.gg/7erXUzr8xK"
+infoTab:AddLabel("Make Your Own Risk!") .TextSize = 17
+infoTab:AddButton("Copy TikTok Link", function()
+    local link = "https://tiktok.com/officialkenzouu"
     if setclipboard then
         setclipboard(link)
         game.StarterGui:SetCore("SendNotification", {
             Title = "Link Copied!";
-            Text = "You can continue to Discord now.";
+            Text = "You can continue to TikTok now.";
             Duration = 3;
         })
     else
