@@ -17,7 +17,7 @@ local lighting = game:GetService("Lighting")
 
 local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/imhenne187/libvariations/refs/heads/main/librarys/red.luau", true))()
 
-local window = library:AddWindow("GenX | Farming - " .. displayName, {
+local window = library:AddWindow("M14EBR | Private Farming - " .. displayName, {
 	title_bar = { Color3.fromRGB(138, 138, 138), Color3.fromRGB(255, 255, 255) },
 	title_bar_transparency = 0.3,
 	background = { Color3.fromRGB(119, 119, 119), Color3.fromRGB(200, 200, 200) },
@@ -861,7 +861,7 @@ local statPetDropdown = settingsTab:AddDropdown("Perk Pet Equip", function(text)
 		task.wait(0.1)
 	end
 end)
-statPetDropdown:Add("Swift Samurai")
+statPetDropdown:Add("Rare Boss Pet")
 statPetDropdown:Add("Tribal Overlord")
 
 local char = player.Character or player.CharacterAdded:wait()
@@ -885,8 +885,8 @@ end)
 
 local infoTab = window:AddTab("Info")
 infoTab:Show()
-infoTab:AddLabel("Made by Henne").TextSize = 17
-infoTab:AddLabel("Contact: Henne @imhenne").TextSize = 17
+infoTab:AddLabel("Developer by Kenzou").TextSize = 17
+infoTab:AddLabel("Tiktok: Kenzouu Warfreakkk!").TextSize = 17
 infoTab:AddLabel("Main Owner: ValtroxqDev") .TextSize = 17
 infoTab:AddButton("Copy Discord Invite", function()
     local link = "https://discord.gg/7erXUzr8xK"
@@ -906,6 +906,6 @@ infoTab:AddButton("Copy Discord Invite", function()
     end
 end)
 infoTab:AddLabel("")
-local wLabel = infoTab:AddLabel("GenX Script [V2.0.0]")
+local wLabel = infoTab:AddLabel("Private Farming Script [V2.0.0]")
 wLabel.TextSize = 30
-wLabel.Font = Enum.Font.Arcade
+wLabel.Font = Enum.Font.LuckiestGuy
