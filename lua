@@ -244,7 +244,7 @@ local function fastRebirthLoop()
 end
 
 rebirthTab:AddLabel("")
-rebirthTab:AddLabel("ðï¸ Rebirth:").TextSize = 17
+rebirthTab:AddLabel("Rebirth:").TextSize = 17
 
 rebirthTab:AddSwitch("Fast Rebirth", function(state)
     isRunning = state
@@ -431,7 +431,7 @@ task.spawn(function()
 end)
 
 farmTab:AddLabel("")
-farmTab:AddLabel("â¡ Fast Farm:").TextSize = 17
+farmTab:AddLabel("Fast Farm:").TextSize = 17
 local farmRunning = false
 local repSpeed = 350
 local pingControl = true
@@ -715,7 +715,7 @@ local PlayerData = {
     Backpack = player:WaitForChild("Backpack")
 }
 
-settingsTab:AddLabel("ð¥ QoL:").TextSize = 17
+settingsTab:AddLabel("QoL:").TextSize = 17
 
 local ProteinEggLabel = settingsTab:AddLabel("Protein Eggs Owned: 0")
 ProteinEggLabel.TextSize = 14
@@ -867,8 +867,8 @@ statPetDropdown:Add("Tribal Overlord")
 local char = player.Character or player.CharacterAdded:wait()
 local hrp = char:WaitForChild("HumanoidRootPart")
 
-settingsTab:AddButton("Jungle Lift",function()
-    hrp.CFrame = CFrame.new(-8642.396484375, 6.7980651855, 2086.1030273)
+settingsTab:AddButton("Overcharged Bar Lift",function()
+    hrp.CFrame = CFrame.new(-1978.44482, 153.939499, 4698.78076, 0, 0, -1, 0, 1, 0, 1, 0, 0)
     task.wait(0.2)
     VirtualInputManager:SendKeyEvent(true, Enum.KeyCode.E, false, game)
     task.wait(0.05)
