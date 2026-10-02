@@ -224,7 +224,7 @@ local function doRebirth()
     end
     
     if isRunning and player.leaderstats.Strength.Value >= strengthTarget then
-        managePets("Mythic Boss Pet)
+        managePets("Mythic Boss Pet")
         task.wait(0.25)
         
         local before = rebirthsStat.Value
