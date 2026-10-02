@@ -856,7 +856,7 @@ local statPetDropdown = settingsTab:AddDropdown("Perk Pet Equip", function(text)
 		end
 	end
 
-	for i = 1, math.min(8, #petsToEquip) do
+	for i = 1, math.min(3, #petsToEquip) do
 		game:GetService("ReplicatedStorage").rEvents.equipPetEvent:FireServer("equipPet", petsToEquip[i])
 		task.wait(0.1)
 	end
