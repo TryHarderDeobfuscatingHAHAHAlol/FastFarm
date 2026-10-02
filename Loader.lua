@@ -237,7 +237,7 @@ end
 
 local function fastRebirthLoop()
     while isRunning do
-        managePets("Rare Boss Pet")
+        managePets("Mythic Boss Pet")
         doRebirth()
         task.wait(0.5)
     end
