@@ -17,14 +17,14 @@ local lighting = game:GetService("Lighting")
 
 local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/TryHarderDeobfuscatingHAHAHAlol/libraryvariations/refs/heads/main/Fastfarminglibrary.lua", true))()
 
-local window = library:AddWindow("M14EBR | Private Farming - " .. displayName, {
-	title_bar = { Color3.fromRGB(138, 138, 138), Color3.fromRGB(255, 255, 255) },
-	title_bar_transparency = 0.3,
-	background = { Color3.fromRGB(119, 119, 119), Color3.fromRGB(200, 200, 200) },
-	background_transparency = 0.1,
-	main_color = Color3.fromRGB(255, 255, 255),
-	min_size = Vector2.new(600, 450),
-	can_resize = true,
+local window = library:AddWindow("M14EBR | PRIVATE FARMING | BY KENZOU - " .. displayName, {
+    title_bar = {Color3.fromRGB(255, 120, 0), Color3.fromRGB(0, 0, 0), Color3.fromRGB(0, 0, 0)},
+    title_bar_transparency = 0.2,
+    background = {Color3.fromRGB(40, 40, 40), Color3.fromRGB(0, 0, 0), Color3.fromRGB(255, 120, 0)},
+    background_transparency = 0.1,
+    main_color = Color3.fromRGB(255, 120, 0),
+    min_size = Vector2.new(500, 400),
+    can_resize = true
 })
 
 player.Idled:Connect(function()
