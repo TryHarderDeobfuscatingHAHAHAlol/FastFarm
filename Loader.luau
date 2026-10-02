@@ -224,7 +224,7 @@ local function doRebirth()
     end
     
     if isRunning and player.leaderstats.Strength.Value >= strengthTarget then
-        managePets("Mythic Boss Pet")
+        managePets("Rare Boss Pet")
         task.wait(0.25)
         
         local before = rebirthsStat.Value
@@ -276,7 +276,7 @@ local farmTab = window:AddTab("Fast Farm")
 local strengthStat = leaderstats:WaitForChild("Strength")
 local durabilityStat = player:WaitForChild("Durability")
 
-farmTab:AddLabel("ð Stats:").TextSize = 17
+farmTab:AddLabel("Stats:").TextSize = 17
 local stopwatchLabel = farmTab:AddLabel("0d 0h 0m 0s - Fast Rep Inactive")
 stopwatchLabel.TextSize = 15
 stopwatchLabel.TextColor3 = Color3.fromRGB(255, 50, 50)
