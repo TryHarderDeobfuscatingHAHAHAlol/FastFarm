@@ -67,7 +67,7 @@ local totalElapsed = 0
 local initialRebirths = rebirthsStat.Value
 local lastPaceUpdate = 0
 
-local serverLabel = rebirthTab:AddLabel("ð Stats:")
+local serverLabel = rebirthTab:AddLabel("Stats:")
 serverLabel.TextSize = 17
 local timeLabel = rebirthTab:AddLabel("0d 0h 0m 0s - Inactive")
 local paceLabel = rebirthTab:AddLabel("Rebirth Pace: /Hour | /Day | /Week")
@@ -501,7 +501,7 @@ farmTab:AddLabel("Try Around!")
 
 local settingsTab = window:AddTab("Misc")
 
-settingsTab:AddLabel("ð Better Farming:").TextSize = 17
+settingsTab:AddLabel("Better Farming:").TextSize = 17
 
 local running = false
 local thread = nil
@@ -862,7 +862,7 @@ local statPetDropdown = settingsTab:AddDropdown("Perk Pet Equip", function(text)
 	end
 end)
 statPetDropdown:Add("Rare Boss Pet")
-statPetDropdown:Add("Tribal Overlord")
+statPetDropdown:Add("Mythic Boss Pet")
 
 local char = player.Character or player.CharacterAdded:wait()
 local hrp = char:WaitForChild("HumanoidRootPart")
@@ -885,7 +885,7 @@ end)
 
 local infoTab = window:AddTab("Info")
 infoTab:Show()
-infoTab:AddLabel("Developer by Kenzou").TextSize = 17
+infoTab:AddLabel("Developer By Kenzou").TextSize = 17
 infoTab:AddLabel("Tiktok: Kenzouu Warfreakkk!").TextSize = 17
 infoTab:AddLabel("Make Your Own Risk!") .TextSize = 17
 infoTab:AddButton("Copy TikTok Link", function()
@@ -894,7 +894,7 @@ infoTab:AddButton("Copy TikTok Link", function()
         setclipboard(link)
         game.StarterGui:SetCore("SendNotification", {
             Title = "Link Copied!";
-            Text = "You can continue to TikTok now.";
+            Text = "Follow mo na TikTok ko, pinindot mo narin Copy Link.";
             Duration = 3;
         })
     else
@@ -906,6 +906,6 @@ infoTab:AddButton("Copy TikTok Link", function()
     end
 end)
 infoTab:AddLabel("")
-local wLabel = infoTab:AddLabel("Private Farming Script [V2.0.0]")
+local wLabel = infoTab:AddLabel("M14EBR Private Farming [V2.0.0]")
 wLabel.TextSize = 30
 wLabel.Font = Enum.Font.LuckiestGuy
